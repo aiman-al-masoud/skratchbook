@@ -93,7 +93,7 @@ public class SomeGUI implements TagListener{
 
 ```
 
-### For a real working example, check out this simple swing color picker:
+### For a real working example, check out this simple Swing color-picker:
 
 https://github.com/aiman-al-masoud/skratchbook/tree/main/src/com/luxlunaris/skratchbook/tests/color_picker
 
