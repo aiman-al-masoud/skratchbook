@@ -9,10 +9,13 @@ Skratchbook adds a much needed layer of abstraction to the whole process, making
 
 ## Getting Started:
 
-To use this library to manage persistent settings, take the following steps:
+To import this library, download the <a href="https://github.com/aiman-al-masoud/skratchbook/releases">latest stable jar</a> and add it to your project's build-path.
 
-* Extend the 'Organizer' abstract class. For instance: 
+## Managing Settings:
 
+To build an app-wide settings-manager for your project, you can do the following:
+
+Extend the 'Organizer' abstract class. For instance: 
 
 ```
 public class Settings extends Organizer {
@@ -96,10 +99,10 @@ public class SomeGUI implements TagListener{
 ### For a real working example, check out <a href="https://github.com/aiman-al-masoud/skratchbook/tree/main/src/com/luxlunaris/skratchbook/tests/color_picker">this simple Swing color-picker</a>.
 
 
+If you've downloaded the jar, you can also try the color-picker demo out, by running:
 
-
-
-
-
+```
+java -jar skratchbook color-picker
+```
 
 
