@@ -31,6 +31,8 @@ public class Settings extends Organizer {
 	*Define your tags and their default value here in string form:
 	*/
 	public static final Tag EXAMPLE_NUMBER = new Tag("example_number", 1000+"");
+	public static final Tag EXAMPLE_COLOR = new Tag("example_color", 1232+"");
+
 	
 	private Settings() {
 		super(PATH);
@@ -70,10 +72,12 @@ public class SomeGUI implements TagListener{
         @Override
 	public void onTagUpdated(Tag tag) {
 	
-	        //get the new value of the modified tag from Settings
-	        int newColor = Settings.instance().getInt(tag);
-		//display the change in color
-		setColor(newColor);
+	        if(tag==Settings.EXAMPLE_COLOR){
+		    //get the new value of the modified tag from Settings
+	            int newColor = Settings.instance().getInt(tag);
+		    //display the change in color
+		    setColor(newColor);
+                }	        
 	}
 	
 	
