@@ -101,7 +101,7 @@ public class SomeGUI implements TagListener{
 ### For a real working example, check out <a href="https://github.com/aiman-al-masoud/skratchbook/tree/main/src/com/luxlunaris/skratchbook/tests/color_picker">this simple Swing color-picker</a>.
 
 
-If you've downloaded the jar, you can also try out the <a href = "https://www.youtube.com/watch?v=_uI8GEcaixM">color-picker demo</a>, by running:
+If you've downloaded the jar, you can try out the <a href = "https://www.youtube.com/watch?v=_uI8GEcaixM">color-picker demo</a> yourself, by running:
 
 ```
 java -jar skratchbook color-picker
