@@ -1,8 +1,8 @@
 # skratchbook
 
-Adding persistent settings is a great way to enhance your app's customizability and user-friendliness. Most often this is done through the use of so called "config" files, that is, bluntly: files that are managed as a persistent dictionary. But coding the part that manages access to disk can get tedious, especially if you're working on many projects at once. 
+Adding persistent settings is a great way to enhance your app's customizability and user-friendliness. Most often this is done through the use of so called "config" files, that is, bluntly: files that are managed as dictionaries. But coding the part that manages that kind of access to a file can get quite tedious, especially if you're working on multiple projects at once. 
 
-Skratchbook adds a much needed layer of abstraction to the whole process, making it so that you can finally focus on the business logic of your program! The library provides an easy way to store and retrieve snippets of data from disk, as well as a flexible means of notifyng objects of interest when a parameter's value changes.
+Skratchbook adds a much needed layer of abstraction to the whole process, making it so that you can finally focus on the business logic of your program! The library provides an easy way to store and retrieve snippets of data from disk, as well as a flexible means of notifyng objects of interest the instant a parameter's value changes.
 
 
 <img src="https://github.com/aiman-al-masoud/skratchbook/blob/main/res/skratchbook.png"></img>
