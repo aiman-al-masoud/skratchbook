@@ -10,7 +10,7 @@ You are hereby granted the right to <b>use and/or modify</b> This Product withou
 
 You are hereby granted the right to <b>re-distribute</b> This Product or a Derived Work, provided that:
 
-1. You always provide a reference/link to (This) Original Product's repository,
+1. You provide a reference to the Original Work,
 
 2. You render any changes you make to the source-code of the Original Product publicly available, 
 
