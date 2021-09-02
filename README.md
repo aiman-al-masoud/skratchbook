@@ -68,6 +68,10 @@ public class SomeGUI implements TagListener{
 	* This class needs to be notified whenever a tag that
 	* stores a color's rgb value changes. 
 	*/
+	public SomeGUI(){
+	   Settings.instance().addTagListener(Settings.EXAMPLE_COLOR, this);
+	}
+	
 	
         @Override
 	public void onTagUpdated(Tag tag) {
