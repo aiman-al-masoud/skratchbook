@@ -9,7 +9,7 @@ Skratchbook adds a much needed layer of abstraction to the whole process, making
 
 ## Getting Started:
 
-To import this library, download the <a href="https://github.com/aiman-al-masoud/skratchbook/releases">latest stable jar</a> and add it to your project's build-path.
+To import this library, download the <a href="https://github.com/aiman-al-masoud/skratchbook/releases">latest stable release</a>, unzip the directory, and add the jar "skratchbook.jar" to your project's build-path.
 
 ## Managing Settings:
 
