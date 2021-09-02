@@ -1,4 +1,4 @@
-package com.luxlunaris.skratchbook.tests;
+package com.luxlunaris.skratchbook.tests.color_picker;
 
 import java.awt.BorderLayout;
 import java.awt.Button;
@@ -6,7 +6,11 @@ import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 
+import javax.imageio.ImageIO;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -22,6 +26,8 @@ public class ColorFrame extends JFrame implements TagListener {
 	public ColorFrame() {
 		Settings.instance().addTagListener(Settings.TAG_COLOR_BG, this);
 		setTitle("RGB Color Picker");
+		setIconImage(loadImage("res/skratchbook.png"));
+		setLocationRelativeTo(null);
 		setLayout(new BorderLayout());
 		add(new ColorSetterPanel(), BorderLayout.SOUTH);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -55,7 +61,6 @@ public class ColorFrame extends JFrame implements TagListener {
 		public ColorSetterPanel() {
 			
 			Color storedColor = new Color(Settings.instance().getInt(Settings.TAG_COLOR_BG));
-			
 			
 			redField = new JTextField(storedColor.getRed()+"");
 			greenField = new JTextField(storedColor.getGreen()+"");
@@ -97,6 +102,15 @@ public class ColorFrame extends JFrame implements TagListener {
 		}
 	}
 	
+	
+	public static BufferedImage loadImage(String pathname) {
+		try {
+			return ImageIO.read(new File(pathname));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
 	
 	
 	

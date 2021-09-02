@@ -1,4 +1,4 @@
-package com.luxlunaris.skratchbook.tests;
+package com.luxlunaris.skratchbook.tests.color_picker;
 
 public class Main {
 
