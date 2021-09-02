@@ -39,6 +39,8 @@ public class Settings extends Organizer {
 	
 	private Settings() {
 		super(PATH);
+		//creates the file at PATH if it doesn't exist.
+		create();
 	}
 	
 	public static Settings instance() {
