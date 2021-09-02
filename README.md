@@ -30,7 +30,7 @@ public class Settings extends Organizer {
 	/**
 	*Define your tags and their default value here in string form:
 	*/
-	public static final Tag TAG_COLOR_BG = new Tag("bg_color", Color.yellow.getRGB()+"");
+	public static final Tag EXAMPLE_NUMBER = new Tag("example_number", 1000+"");
 	
 	private Settings() {
 		super(PATH);
@@ -42,6 +42,23 @@ public class Settings extends Organizer {
   
   }
 ```
+
+Now you can call Settings, from anywhere in your project, to store or retrive the value of a tag!
+
+
+```
+//setting the value of a tag
+Settings.instance().setTag(Settings.EXAMPLE_NUMBER, 1001+"")
+
+//...
+
+//retrieving the value of a tag
+int myNum = Settings.instance().getInt(Settings.EXAMPLE_NUMBER);
+```
+
+
+
+
 
 
 
