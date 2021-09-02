@@ -56,6 +56,34 @@ Settings.instance().setTag(Settings.EXAMPLE_NUMBER, 1001+"")
 int myNum = Settings.instance().getInt(Settings.EXAMPLE_NUMBER);
 ```
 
+If you need a class to be notified instantly whenever a tag's value is modified, you can implement the interface 'TagListener', like so:
+
+
+```
+public class SomeGUI implements TagListener{
+
+        /**
+	* This class needs to be notified whenever a tag that
+	* stores a color's rgb value changes. 
+	*/
+	
+        @Override
+	public void onTagUpdated(Tag tag) {
+	
+	        //get the new value of the modified tag from Settings
+	        int newColor = Settings.instance().getInt(tag);
+		//display the change in color
+		setColor(newColor);
+	}
+	
+	
+	private void setColor(int newColor){
+	//...
+	}
+}
+
+
+```
 
 
 
